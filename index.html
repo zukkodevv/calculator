@@ -26,7 +26,7 @@
 
     <!--* Inputs de todos los números -->
     <main class="d-flex justify-content-center align-content-center">
-      <div class="p-4 border">
+      <div class="p-4 border border-black border-2">
         <input
           id="result"
           type="text"
@@ -38,7 +38,23 @@
           type="button"
           value="("
           class="p-4 mt-1 form-control-sm custom-input"
-          onclick="addResult(`(`)" />
+          onclick="addResult('(')" />
+        <input
+          type="button"
+          value=")"
+          class="p-4 mt-1 form-control-sm custom-input"
+          onclick="addResult(')')" />
+        <input
+          type="button"
+          value="%"
+          class="p-4 mt-1 form-control-sm custom-input"
+          onclick="addResult('%')" />
+        <input
+          type="button"
+          value="AC"
+          class="p-4 mt-1 form-control-sm custom-input"
+          onclick="clearResult()" />
+
         <br />
         <input
           type="button"
@@ -57,9 +73,9 @@
           onclick="addResult('9')" />
         <input
           type="button"
-          value="s"
+          value="/"
           class="p-4 mt-1 form-control-sm custom-input"
-          onclick="addResult('+')" />
+          onclick="addResult('/')" />
         <br />
         <input
           type="button"
@@ -107,7 +123,7 @@
           type="button"
           value="0"
           class="p-4 mt-1 form-control-sm custom-input"
-          onclick="addResult()" />
+          onclick="addResult('0')" />
         <input
           type="button"
           value=","
@@ -123,14 +139,16 @@
           value="+"
           class="p-4 mt-1 form-control-sm custom-input"
           onclick="addResult('+')" />
-        <input
-          type="button"
-          value="AC"
-          class="p-4 mt-1 form-control-sm custom-input"
-          onclick="clearResult()" />
       </div>
-
-      <script src="scripts/index.js"></script>
     </main>
+    <footer class="mt-5 text-muted bg-light p-3">
+      <h4 class="custom-footer">
+        Gracias por ver mi proyecto, código abierto en github;
+      </h4>
+      <a href="https://github.com/zukkodevv/calculator"
+        ><img src="scripts/unnamed.png" alt="Logo de github" class="w-25"
+      /></a>
+    </footer>
+    <script src="scripts/index.js"></script>
   </body>
 </html>
